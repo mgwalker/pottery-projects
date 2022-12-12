@@ -1,0 +1,45 @@
+html {
+  font-size: 12pt;
+}
+body {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+h3{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+body {
+  padding: 0 2em;
+}
+
+ul {
+  margin-top: 0;
+}
+
+ul li {
+  margin-top: 0;
+}
+
+li {
+  list-style-position: outside;
+}
+
+.indented {
+  padding-left: 2em;
+}
+
+div.item {
+  display: inline-block;
+  vertical-align: top;
+}
