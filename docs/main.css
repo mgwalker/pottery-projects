@@ -1,22 +1,47 @@
 html {
   font-size: 12pt;
 }
+
 body {
   font-size: 1rem;
+  max-width: 8.5in;
 }
+
 h1 {
   font-size: 3rem;
   font-weight: 400;
 }
+
 h2 {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  margin-left: 2rgitem;
 }
-h3{
+
+h2 + ul {
+  margin-left: 4rem;
+}
+
+h3 {
+  border-bottom: 1px solid black;
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
+}
+
+h1 + p,
+h2 + p,
+h3 + p {
+  padding-left: 2em;
+}
+
+li > p:first-child {
+  font-weight: bold;
+}
+
+th,td {
+  border-bottom: 1px solid #ddd;
 }
 
 body {
