@@ -22,16 +22,12 @@
 
 ## Bisque fired
 
-_(nothing currently)_
-
-## Cleaned/trimmed
-
 - coffee canister
 
   A canister for holding coffee. It has sculpted coffee beans stuck to the
-  front, and a lid that fits into a lip on the top. This one is in the kiln now
-  and hopefully it won't explode or crack, but I'm not super optimistic that the
-  lid is going to survive unscathed.
+  front, and a lid that fits into a lip on the top.
+
+## Cleaned/trimmed
 
 - soap dish, lidded box, cup with handle, planter
 
@@ -41,7 +37,10 @@ _(nothing currently)_
 
 ## Constructed
 
-_(nothing currently)_
+- measuring scoop
+
+  Take two of the 1/2-cup measuring cup. I've got the math right this time so...
+  we'll see!
 
 # Complete
 
@@ -59,11 +58,6 @@ _(nothing currently)_
   right for a shot glass, so whatever! Glaze is all white.
 
 # Thinking about
-
-- measuring scoop
-
-  Take two of the 1/2-cup measuring cup. I've got the math right this time so...
-  we'll see!
 
 - lamp thing maybe?
 
