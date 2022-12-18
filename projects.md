@@ -18,12 +18,14 @@
 
 ## Bisque fired
 
+_nothing currently_
+
+## Cleaned/trimmed
+
 - measuring scoop
 
   Take two of the 1/2-cup measuring cup. I've got the math right this time so...
   we'll see!
-
-## Cleaned/trimmed
 
 - soap dish, lidded box, cup with handle, planter
 
