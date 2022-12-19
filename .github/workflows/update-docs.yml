@@ -1,0 +1,31 @@
+name: projects.md modified
+
+on:
+  push:
+    paths:
+      - projects.md
+
+jobs:
+  rebuild:
+    name: rebuild the site
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: install dependencies
+        run: npm ci
+      - name: build the index page
+        run: npm run build
+      - name: prettify everything
+        run: npx prettier -w docs/*
+
+      - run: if git diff --exit-code --quiet; then echo "::set-output name=changes::no"; else echo "::set-output name=changes::yes"; fi
+        id: check if anything actually changed
+
+      - if: steps.diff.outputs.changes == 'yes'
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: automated rebuild happened here
