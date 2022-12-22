@@ -7,6 +7,45 @@ body {
   max-width: 8.5in;
 }
 
+#card-board {
+  display: flex;
+}
+
+.card-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0.5rem;
+  background: white;
+  margin: 0.5rem 0;
+}
+
+.card.constructed {
+  background: lemonchiffon;
+}
+
+.card.cleaned {
+  background: lightcyan;
+}
+
+.card.bisqued {
+  background: pink;
+}
+
+.card.glazed {
+  background: linear-gradient(60deg,pink,sandybrown,yellow,powderblue,palegreen,orchid);
+}
+
+.card-column a, .card-column a:visited, .card-column a:hover {
+  color: #333;
+  font-weight: bold;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 400;
@@ -24,16 +63,13 @@ h2 + ul {
 }
 
 h3 {
-  border-bottom: 1px solid black;
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
 }
 
-h1 + p,
-h2 + p,
-h3 + p {
-  padding-left: 2em;
+main.project {
+  margin-left: 2em;
 }
 
 li > p:first-child {
