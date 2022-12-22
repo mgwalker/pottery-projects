@@ -1,0 +1,106 @@
+html {
+  font-size: 12pt;
+}
+
+body {
+  font-size: 1rem;
+  max-width: 8.5in;
+}
+
+#card-board {
+  display: flex;
+}
+
+.card-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0.5rem;
+  background: white;
+  margin: 0.5rem 0;
+}
+
+.card.constructed {
+  background: lemonchiffon;
+}
+
+.card.cleaned {
+  background: lightcyan;
+}
+
+.card.bisqued {
+  background: pink;
+}
+
+.card.glazed {
+  background: linear-gradient(60deg,pink,sandybrown,yellow,powderblue,palegreen,orchid);
+}
+
+.card-column a, .card-column a:visited, .card-column a:hover {
+  color: #333;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-left: 2rgitem;
+}
+
+h2 + ul {
+  margin-left: 4rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+main.project {
+  margin-left: 2em;
+}
+
+li > p:first-child {
+  font-weight: bold;
+}
+
+th,td {
+  border-bottom: 1px solid #ddd;
+}
+
+body {
+  padding: 0 2em;
+}
+
+ul {
+  margin-top: 0;
+}
+
+ul li {
+  margin-top: 0;
+}
+
+li {
+  list-style-position: outside;
+}
+
+.indented {
+  padding-left: 2em;
+}
+
+div.item {
+  display: inline-block;
+  vertical-align: top;
+}

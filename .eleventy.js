@@ -8,6 +8,7 @@ module.exports = (config) => {
 
   config.addDataExtension("yaml", (data) => yaml.load(data));
   config.addDataExtension("yml", (data) => yaml.load(data));
+  config.addPassthroughCopy("main.css");
 
   return {
     dir: {
