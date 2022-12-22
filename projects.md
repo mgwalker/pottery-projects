@@ -2,19 +2,41 @@
 
 ## Glazed
 
+- soap dish, lidded box, cup with handle, planter
+
+  These are all part of a hand-building class I took at home. They are glazed,
+  fired, and ready for pickup. I haven't seen them yet.
+
+## Bisque fired
+
+- measuring scoop
+
+  Take two of the 1/2-cup measuring cup. Holds precisely 1/2 cup!
+
+## Cleaned/trimmed
+
+_nothing currently_
+
+## Constructed
+
+_nothing currently_
+
+# Complete
+
 - coffee canister
 
   A canister for holding coffee. It has sculpted coffee beans stuck to the
-  front, and a lid that fits into a lip on the top.
+  front, and a lid that fits into a lip on the top. It exceeded my expectations
+  and I am beyond thrilled with how it turned out.
 
   ### Glazing
 
-  | section       | glaze            | hope       | outcome |
-  | ------------- | ---------------- | ---------- | ------- |
-  | interior      | very white       | very white |         |
-  | body, base    | G white          | white      |         |
-  | body, letters | St. John's black | black      |         |
-  | body, beans   | shaner red       | brown      |         |
+  | section       | glaze            | hope       | outcome                                               |
+  | ------------- | ---------------- | ---------- | ----------------------------------------------------- |
+  | interior      | very white       | very white | quite white                                           |
+  | body, base    | G white          | white      | thin white with speckles of clear over the fired body |
+  | body, letters | St. John's black | black      | black                                                 |
+  | body, beans   | shaner red       | brown      | matte brown - PERFECT                                 |
 
 - dog food bowl
 
@@ -40,36 +62,10 @@
   The glazing turned out pretty poorly. In an effort to have more control over
   the thickness of the glaze, I decided to try patting it on with a sponge. That
   resulted in too little glaze and several large spots inside the bowl that do
-  not appear to be glazed at all. I don't think this bowl is suitable to use as
-  an actual food bowl.
-
-  I'm going to try putting another coat of the "very white" glaze on the inside
-  and fire it again to try to get everything well-sealed. This poor clay is
-  going through the fires of hell again!
-
-## Bisque fired
-
-_nothing currently_
-
-## Cleaned/trimmed
-
-- measuring scoop
-
-  Take two of the 1/2-cup measuring cup. I've got the math right this time so...
-  we'll see!
-
-- soap dish, lidded box, cup with handle, planter
-
-  These are all part of a hand-building class I took at home. They are with the
-  studio to be glazed and fired, and I don't really know anything more about
-  their status than that. They'll email me when they're ready to pick up.
-
-## Constructed
-
-_nothing currently_
-
-# Complete
-
+  not appear to be glazed at all. However, since it was fired to cone 10, the
+  ceramic is vitrified, so this bowl is still food-safe, and frankly I kind of
+  like the way it looks!
+  
 - flour scoop
 
   Just a flour scoop. It has the word "flour" carved in cursive into the bottom
