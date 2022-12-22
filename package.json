@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "build.js",
-  "type": "module",
   "directories": {
     "doc": "docs"
   },
@@ -13,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "markdown-it": "^13.0.1"
+    "js-yaml": "^4.1.0"
   },
   "devDependencies": {
     "prettier": "^2.8.1"

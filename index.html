@@ -1,0 +1,57 @@
+---
+title: My Ceramics Projects
+---
+
+<h2>In-progress</h2>
+
+<div id="card-board">
+  <div class="card-column">
+    <h3>Constructed</h3>
+    {%- for project in collections.constructed -%}
+    <a href="{% project project.url %}"
+      ><div class="card constructed">{{ project.data.title }}</div></a
+    >
+    {%- endfor -%}
+  </div>
+
+  <div class="card-column">
+    <h3>Cleaned/trimmed</h3>
+    {%- for project in collections.cleaned -%}
+    <a href="{% project project.url %}"
+      ><div class="card cleaned">{{ project.data.title }}</div></a
+    >
+    {%- endfor -%}
+  </div>
+
+  <div class="card-column">
+    <h3>Bisque fired</h3>
+    {%- for project in collections.bisqued -%}
+    <a href="{% project project.url %}"
+      ><div class="card bisqued">{{ project.data.title }}</div></a
+    >
+    {%- endfor -%}
+  </div>
+
+  <div class="card-column">
+    <h3>Glazed</h3>
+    {%- for project in collections.glazed -%}
+    <a href="{% project project.url %}"
+      ><div class="card glazed">{{ project.data.title }}</div></a
+    >
+    {%- endfor -%}
+  </div>
+</div>
+
+<h2>Done</h2>
+<ul>
+  {%- for project in collections.done -%}
+  <li><a href="{% project project.url %}">{{ project.data.title }}</a></li>
+  {%- endfor -%}
+</ul>
+
+<h2>Ideas</h2>
+<ul>
+  {%- for idea in ideas -%}
+  <li><strong>{{ idea.name }}</strong><br />{{ idea.description }}</li>
+  {%- endfor -%}
+</ul>

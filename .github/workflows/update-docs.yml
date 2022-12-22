@@ -1,9 +1,9 @@
-name: projects.md modified
+name: content modified
 
 on:
   push:
-    paths:
-      - projects.md
+    paths-ignore:
+      - 'docs/**'
 
 jobs:
   rebuild:
@@ -20,7 +20,7 @@ jobs:
         run: npm ci
 
       - name: build the index page
-        run: npm run build
+        run: npx @11ty/eleventy
 
       - run: if git diff --exit-code --quiet; then echo "::set-output name=changes::no"; else echo "::set-output name=changes::yes"; fi
         id: diff
