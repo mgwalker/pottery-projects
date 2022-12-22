@@ -2,8 +2,8 @@ name: content modified
 
 on:
   push:
-    paths-ignore:
-      - 'docs/**'
+    branches:
+      - main
 
 jobs:
   rebuild:
@@ -23,12 +23,11 @@ jobs:
         env:
           BASEURL: /pottery-projects
         run: npx @11ty/eleventy
-
-      - run: if git diff --exit-code --quiet; then echo "::set-output name=changes::no"; else echo "::set-output name=changes::yes"; fi
-        id: diff
-        name: check if anything actually changed
-
-      - if: steps.diff.outputs.changes == 'yes'
-        uses: EndBug/add-and-commit@v9
+      
+      - name: upload artifacts
+        uses: actions/upload-pages-artifact@v1
         with:
-          message: automated rebuild happened here
+          path: _site
+
+      - name: deploy
+        uses: actions/deploy-pages@v1

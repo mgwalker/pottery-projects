@@ -13,7 +13,7 @@ module.exports = (config) => {
     dir: {
       data: "data",
       includes: "includes",
-      output: "docs",
+      output: "_site",
     },
   };
 };
