@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="{{site.baseurl}}/main.css" />
   </head>
   <body>
-    {% if title %}
-    <h1>{{ title }}</h1>
-    {% endif %} {{ content }}
+    <div id="content">
+      {% if title %}
+      <h1>{{ title }}</h1>
+      {% endif %} {{ content }}
+    </div>
   </body>
 </html>
