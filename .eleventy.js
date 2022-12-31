@@ -2,6 +2,8 @@ const path = require("path");
 const yaml = require("js-yaml");
 const image = require("@11ty/eleventy-img");
 
+const BASEURL = process.env.BASEURL ?? "/";
+
 const imageShortcode = async (imagePath, alt, caption, width) => {
   const imgMeta = await image(imagePath, {
     filenameFormat: (id, src, w, f) =>
@@ -12,8 +14,10 @@ const imageShortcode = async (imagePath, alt, caption, width) => {
   });
 
   const img = imgMeta[Object.keys(imgMeta)[0]].pop();
-  const imgHtml = `<img src="/images/${encodeURIComponent(
-    img.filename
+  const imgHtml = `<img src="${path.join(
+    BASEURL,
+    "images",
+    encodeURIComponent(img.filename)
   )}" alt="${alt}">`;
 
   if (caption) {
