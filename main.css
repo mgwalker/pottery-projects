@@ -52,6 +52,20 @@ body {
   font-weight: bold;
 }
 
+.done-item-flex {
+  display: flex;
+}
+
+.done-item-info {
+  flex-basis: 100%;
+}
+
+ul > li:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 400;

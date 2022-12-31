@@ -1,6 +1,8 @@
 ---
 title: Lidded box (at-home class)
-tags: glazed
+tags: done
+layout: layouts/project
+thumbnail: images/lidded box/finished 1.jpg
 ---
 
 This was one of the projects for an at-home hand-building class I took. After I

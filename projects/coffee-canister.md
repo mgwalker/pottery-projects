@@ -2,6 +2,7 @@
 title: Coffee canister
 tags: done
 layout: layouts/project
+thumbnail: images/coffee canister/finished.jpg
 ---
 
 A canister for holding coffee. This one is hand-built using slabs. I added the

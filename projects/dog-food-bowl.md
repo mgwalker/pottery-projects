@@ -1,6 +1,8 @@
 ---
 title: Dog food bowl
 tags: done
+layout: layouts/project
+thumbnail: images/dog bowl/finished.jpg
 ---
 
 A food bowl for my dog. Pretty simple hand-build with a paw print scraped into

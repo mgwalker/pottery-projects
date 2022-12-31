@@ -45,7 +45,20 @@ title: My Ceramics Projects
 <h2>Done</h2>
 <ul>
   {%- for project in collections.done -%}
-  <li><a href="{% project project.url %}">{{ project.data.title }}</a></li>
+  <li>
+    <div class="done-item-flex">
+      <div class="done-item-info">
+        <a href="{% project project.url %}">{{ project.data.title }}</a> - {{
+        project.data.page.excerpt}} {% excerpt project %}
+      </div>
+      <div>
+        <!-- prettier-ignore -->
+        {% if project.data.thumbnail %}
+        {% thumbnail project.data.thumbnail "{\"valign\":\"top\"}" %}
+        {% endif %}
+      </div>
+    </div>
+  </li>
   {%- endfor -%}
 </ul>
 

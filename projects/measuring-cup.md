@@ -1,6 +1,8 @@
 ---
 title: Accidental shot glass
 tags: done
+layout: layouts/project
+thumbnail: images/measuring cup 1/built 2.jpg
 ---
 
 This was supposed to be a 1/2-cup measuring cup for my dog's food. When I did my
