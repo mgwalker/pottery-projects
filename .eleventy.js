@@ -2,25 +2,25 @@ const path = require("path");
 const yaml = require("js-yaml");
 const image = require("@11ty/eleventy-img");
 
-const imageShortcode = async (imagePath, attrs, thn = false) => {
+const imageShortcode = async (imagePath, alt, caption, width) => {
   const imgMeta = await image(imagePath, {
     filenameFormat: (id, src, w, f) =>
       `${path.basename(src, `.${f}`)}-${id}-${w}.${f}`,
     formats: ["auto"],
     outputDir: "_site/images/",
-    widths: [thn ? 150 : 800],
+    widths: [width],
   });
 
-  const attrString = Object.entries(JSON.parse(attrs ?? "{}"))
-    .map(([key, value]) => `${key}="${value}"`)
-    .join(" ")
-    .trim();
-
   const img = imgMeta[Object.keys(imgMeta)[0]].pop();
+  const imgHtml = `<img src="/images/${encodeURIComponent(
+    img.filename
+  )}" alt="${alt}">`;
 
-  return `<img src="/images/${encodeURIComponent(img.filename)}" ${
-    attrString.length ? attrString : ""
-  }>`;
+  if (caption) {
+    return `<figure>${imgHtml}<figcaption>${caption}</figcaption></figure>`;
+  } else {
+    return imgHtml;
+  }
 };
 
 module.exports = (config) => {
@@ -32,12 +32,12 @@ module.exports = (config) => {
     path.join(process.env.BASEURL ?? "", link)
   );
 
-  config.addShortcode("image", async (imagePath, attrs) =>
-    imageShortcode(imagePath, attrs, false)
+  config.addShortcode("image", async (imagePath, alt, caption) =>
+    imageShortcode(imagePath, alt, caption, 800)
   );
 
-  config.addShortcode("thumbnail", async (imagePath, attrs) =>
-    imageShortcode(imagePath, attrs, true)
+  config.addShortcode("thumbnail", async (imagePath, alt, caption) =>
+    imageShortcode(imagePath, alt, caption, 150)
   );
 
   function extractExcerpt(article) {

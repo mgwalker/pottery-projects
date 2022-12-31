@@ -7,3 +7,8 @@
   description: |
     A functional hinge made of clay! I think it should work, and it would open
     up some really interesting possiblities for future builds.
+- name: teapot
+  description: |
+    I'd like to be able to heat up a bunch of water, brew a bunch of tea, and
+    then pour cups out of it while it stays hot in the teapot. And why not try
+    to make it myself?

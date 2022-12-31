@@ -66,6 +66,15 @@ ul > li:not(:first-child) {
   padding-top: 1rem;
 }
 
+figure {
+  margin: 0 0 1rem 0;
+}
+
+figure figcaption {
+  font-style: italic;
+  text-align: center;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 400;
@@ -90,6 +99,14 @@ h3 {
 
 main.project {
   margin-left: 2em;
+}
+
+main.project h3 {
+  margin: 1rem 0;
+}
+
+main.project table {
+  margin: 1rem 0;
 }
 
 li > p:first-child {

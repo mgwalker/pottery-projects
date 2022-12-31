@@ -6,10 +6,7 @@ thumbnail: images/dog bowl/finished.jpg
 ---
 
 A food bowl for my dog. Pretty simple hand-build with a paw print scraped into
-the center of the bowl. For glazing, I used "very white" for the inside and a
-black to fill in paw print. On the outside, I used "reitz blue" as a base, with
-streaks of "very white" (white), shaner red (hopefully turns brown at firing),
-and "iron saturate" (hopefully fires black) to maybe look like dog hair.
+the center of the bowl.
 
 **Lesson learned!** Don't sponge on glaze. It doesn't go on _nearly_ thick
 enough that way.
