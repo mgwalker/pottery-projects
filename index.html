@@ -6,7 +6,7 @@ title: My Ceramics Projects
 
 <div id="card-board">
   <div class="card-column">
-    <h3>Constructed</h3>
+    <h3>Constructing</h3>
     {%- for project in collections.constructed -%}
     <a href="{% project project.url %}"
       ><div class="card constructed">{{ project.data.title }}</div></a
@@ -66,5 +66,25 @@ title: My Ceramics Projects
 <ul>
   {%- for idea in ideas -%}
   <li><strong>{{ idea.name }}</strong><br />{{ idea.description }}</li>
+  {%- endfor -%}
+</ul>
+
+<h2>Failed</h2>
+<ul>
+  {%- for project in collections.failed -%}
+  <li>
+    <div class="done-item-flex">
+      <div class="done-item-info">
+        <a href="{% project project.url %}">{{ project.data.title }}</a> - {{
+        project.data.page.excerpt}} {% excerpt project %}
+      </div>
+      <div>
+        <!-- prettier-ignore -->
+        {% if project.data.thumbnail %}
+        {% thumbnail project.data.thumbnail %}
+        {% endif %}
+      </div>
+    </div>
+  </li>
   {%- endfor -%}
 </ul>
