@@ -31,6 +31,11 @@ module.exports = (config) => {
   config.addDataExtension("yaml", (data) => yaml.load(data));
   config.addDataExtension("yml", (data) => yaml.load(data));
   config.addPassthroughCopy("main.css");
+  config.addPassthroughCopy("scripts/*.js", "js/");
+
+  config.addShortcode("script", (link) =>
+    path.join(process.env.BASEURL ?? "", link)
+  );
 
   config.addShortcode("project", (link) =>
     path.join(process.env.BASEURL ?? "", link)
