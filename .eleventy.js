@@ -14,6 +14,17 @@ const imageShortcode = async (imagePath, alt, caption, width) => {
   });
 
   const img = imgMeta[Object.keys(imgMeta)[0]].pop();
+
+  if (!img) {
+    throw new Error(`Image metadata came back empty. Image not handled.
+
+Path:    ${imagePath}
+alt:     ${alt}
+caption: ${caption}
+width:   ${width}
+`);
+  }
+
   const imgHtml = `<img src="${path.join(
     BASEURL,
     "images",
