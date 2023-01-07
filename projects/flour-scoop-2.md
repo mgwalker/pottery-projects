@@ -1,6 +1,6 @@
 ---
 title: "Flour scoop #2"
-tags: constructed
+tags: cleaned
 layout: layouts/project
 ---
 
@@ -20,3 +20,9 @@ things I had handy and let it sit for a bit, and that seemed to have done the
 trick.
 
 {% image "images/flour scoop 2/built.jpg" "" "The initial build of the flour scoop." %}
+
+During the cleaning and trimming phase, I opted to engrave some text again. On
+the previous flour scoop, I engraved the word "flour" in cursive on the base.
+This time I decided to be even more utilitarian and generic.
+
+{% image "images/flour scoop 2/trimmed.jpg" "" "Flour scoop, trimmed and cleaned. The word \"scoop\" is engraved into the scoop." %}
