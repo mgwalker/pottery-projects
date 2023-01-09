@@ -1,6 +1,6 @@
 ---
 title: Coffee mug
-tags: constructed
+tags: cleaned
 layout: layouts/project
 ---
 
@@ -23,3 +23,10 @@ to be more attentive to the clay is responding when I try to bend it, and maybe
 give it a bit of water to help it relax.
 
 {% image "images/coffee mug/built.jpg" "" "Coffee mug with handle attached" %}
+
+In addition to cleaning the mug, which went pretty well since the handle
+survived really well, I carved my signature stylized giraffe in relief into the
+two sides of the mug. Depending on how it turns out, this could become my
+favorite mug ever.
+
+{% image "images/coffee mug/cleaned.jpg" "" "Coffee mug with a stylized giraffe carved in relief" %}

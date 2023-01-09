@@ -11,6 +11,8 @@ the center of the bowl.
 **Lesson learned!** Don't sponge on glaze. It doesn't go on _nearly_ thick
 enough that way.
 
+{% image "images/dog bowl/finished.jpg" "finished dog bowl" %}
+
 ### Glazing
 
 | section             | glaze                                 | hope                                                                                                | outcome             |
