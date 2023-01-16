@@ -1,6 +1,6 @@
 ---
 title: "Flour scoop #2"
-tags: cleaned
+tags: glazed
 layout: layouts/project
 ---
 
@@ -26,3 +26,8 @@ the previous flour scoop, I engraved the word "flour" in cursive on the base.
 This time I decided to be even more utilitarian and generic.
 
 {% image "images/flour scoop 2/trimmed.jpg" "" "Flour scoop, trimmed and cleaned. The word \"scoop\" is engraved into the scoop." %}
+
+I didn't take any pictures after the bisque firing because it wasn't anything
+particularly interesting. For colors, I chose a G White base glaze and a...
+someone's Big Blue (I don't remember the exact name) on top. When fired, it
+should turn out a really pretty blue. We'll see!

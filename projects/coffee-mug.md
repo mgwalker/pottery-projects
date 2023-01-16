@@ -1,6 +1,6 @@
 ---
 title: Coffee mug
-tags: cleaned
+tags: bisqued
 layout: layouts/project
 ---
 
