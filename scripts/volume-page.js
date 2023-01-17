@@ -10,6 +10,8 @@ const radiusUnit = document.querySelector("[data-radius-unit]");
 const diameter = document.querySelector("[data-diameter]");
 const diameterUnit = document.querySelector("[data-diameter-unit]");
 
+const SHRINKAGE = 0.12;
+
 let BASE = "";
 
 const update = () => {
@@ -53,8 +55,8 @@ const update = () => {
     height.value = h.toFixed(3);
   }
 
-  const hh = Number.parseFloat(height.value) * 1.1;
-  const rr = Number.parseFloat(radius.value) * 1.1;
+  const hh = Number.parseFloat(height.value) * (1 + SHRINKAGE);
+  const rr = Number.parseFloat(radius.value) * (1 + SHRINKAGE);
   const dd = rr * 2;
   const vv = Math.PI * rr * rr * hh;
 

@@ -12,12 +12,5 @@
     I'd like to be able to heat up a bunch of water, brew a bunch of tea, and
     then pour cups out of it while it stays hot in the teapot. And why not try
     to make it myself?
-- name: flour scoop 2
-  description: |
-    My husband has said he'd like another one for the other flour container.
-    Okay then! I know how to do this one.
-- name: Tea mug
-  description: |
-    I've been putting off trying to build any cups that I would actually try
-    to use until I learned to throw on the wheel, but since that's likely to
-    be a while... maybe it's time to hand-build one.
+- name: bell
+  description: Some kind of bell maybe.
