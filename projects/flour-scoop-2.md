@@ -1,6 +1,6 @@
 ---
 title: "Flour scoop #2"
-tags: glazed
+tags: finished
 layout: layouts/project
 ---
 
@@ -31,3 +31,9 @@ I didn't take any pictures after the bisque firing because it wasn't anything
 particularly interesting. For colors, I chose a G White base glaze and a...
 someone's Big Blue (I don't remember the exact name) on top. When fired, it
 should turn out a really pretty blue. We'll see!
+
+## Other flour scoops
+
+By mid-January, I had constructed 6 more flour scoops. But... I'm not going to
+document them here because I didn't do anything new with them than with this
+one.
