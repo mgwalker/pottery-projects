@@ -1,6 +1,6 @@
 ---
 title: "Flour scoop #2"
-tags: finished
+tags: done
 layout: layouts/project
 ---
 
