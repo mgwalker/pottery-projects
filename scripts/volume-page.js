@@ -1,4 +1,4 @@
-import { volumeConversions } from "./conversions.js";
+import { lengthConversions, volumeConversions } from "./conversions.js";
 
 const volume = document.querySelector("[data-volume]");
 const volumeUnit = document.querySelector("[data-volume-unit]");
@@ -10,7 +10,9 @@ const radiusUnit = document.querySelector("[data-radius-unit]");
 const diameter = document.querySelector("[data-diameter]");
 const diameterUnit = document.querySelector("[data-diameter-unit]");
 
-const SHRINKAGE = 0.12;
+const shrinkage = document.querySelector("[data-shrinkage]");
+const thickness = document.querySelector("[data-thickness]");
+const thicknessUnit = document.querySelector("[data-thickness-unit");
 
 let BASE = "";
 
@@ -55,8 +57,14 @@ const update = () => {
     height.value = h.toFixed(3);
   }
 
-  const hh = Number.parseFloat(height.value) * (1 + SHRINKAGE);
-  const rr = Number.parseFloat(radius.value) * (1 + SHRINKAGE);
+  const shrink = 1 + Number.parseFloat(shrinkage.value) / 100;
+
+  const tt =
+    Number.parseFloat(thickness.value) *
+      lengthConversions.get(thicknessUnit.value).get(heightUnit.value) || 0;
+
+  const hh = Number.parseFloat(height.value) * shrink;
+  const rr = Number.parseFloat(radius.value) * shrink + tt * 2;
   const dd = rr * 2;
   const vv = Math.PI * rr * rr * hh;
 
@@ -64,8 +72,10 @@ const update = () => {
   document.querySelector("[data-measure-radius]").innerText = rr.toFixed(3);
   document.querySelector("[data-measure-diameter]").innerText = dd.toFixed(3);
   document.querySelector("[data-measure-volume]").innerText = vv.toFixed(3);
+  document.querySelector("[data-measure-length]").innerText = (
+    Math.PI * dd
+  ).toFixed(3);
 
-  console.log(`${hh}${targetUnit}`);
   const u = heightUnit.value;
   const w = `${dd}${u}`;
   const h = `${hh}${u}`;
@@ -108,7 +118,17 @@ const setBaseDimension = (dim) => {
   };
 };
 
-if (volume && volumeUnit && height && heightUnit && radius && radiusUnit) {
+if (
+  volume &&
+  volumeUnit &&
+  height &&
+  heightUnit &&
+  radius &&
+  radiusUnit &&
+  shrinkage &&
+  thickness &&
+  thicknessUnit
+) {
   volume.addEventListener("input", update);
   volumeUnit.addEventListener("change", update);
 
@@ -118,4 +138,9 @@ if (volume && volumeUnit && height && heightUnit && radius && radiusUnit) {
   radiusUnit.addEventListener("change", setBaseDimension("radius"));
   diameter.addEventListener("input", setBaseDimension("diameter"));
   diameterUnit.addEventListener("change", setBaseDimension("diameter"));
+
+  shrinkage.addEventListener("input", update);
+
+  thickness.addEventListener("input", update);
+  thicknessUnit.addEventListener("change", update);
 }
