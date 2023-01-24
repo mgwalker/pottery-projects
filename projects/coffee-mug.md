@@ -1,6 +1,6 @@
 ---
 title: Coffee mug
-tags: bisqued
+tags: glazed
 layout: layouts/project
 ---
 
@@ -30,3 +30,20 @@ two sides of the mug. Depending on how it turns out, this could become my
 favorite mug ever.
 
 {% image "images/coffee mug/cleaned.jpg" "" "Coffee mug with a stylized giraffe carved in relief" %}
+
+But alas, it is not to be. The mug turned out too small, as expected. I'm happy
+with how the actual build went, and it came out of bisque in really good shape.
+I used a diamond smoothing pad for the first time to sand off some of the burrs
+that result from the clay not being completely smooth. The end result is the
+bisqueware was very smooth and nice.
+
+I decided to use underglazes for the color so I would (hopefully!) have more
+control over the outcome, and honestly, I am very hopeful that underglazes are
+going to become a standard part of my pottery.
+
+{% image "images/coffee mug/bisqued.jpg" "" "Coffee mug with a stylized giraffe carved in relief, with colored glaze applied." %}
+
+I think I will use underglazes on greenware instead of bisqueware from now on,
+however, because when I brushed on a clear coat, I think the underglazes smeared
+together. I won't know for sure until it's back from firing, but... I'm not
+super optimistic.
